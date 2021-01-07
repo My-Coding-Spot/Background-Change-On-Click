@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Background Change</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <button class="btn" onclick="changebg()">Change Background</button>
+    </div>
+
+    <script>
+        var i = 0
+        const list = ['#357ec7','#4ed975','#ffa62f','#c35817','#9f000f','#571b7e','#000060']
+
+        function changebg() {
+            document.getElementById('container').style.background = list[i]
+            i += 1
+            if (i == list.length) {
+                i = 0
+            }
+        }
+    </script>
+</body>
+
+</html>
